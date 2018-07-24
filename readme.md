@@ -1,3 +1,3 @@
-# Prueba2_JS: JavaScript & JQuery
+# Prueba2: JS
 
 ### El link de la web es: https://pablostrk.github.io/PruebaJS/
