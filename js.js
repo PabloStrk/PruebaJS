@@ -18,17 +18,6 @@ $(function() {
 
     counter.text(newCounter);  // se actualiza el string
 
-    // ESTE DEBERÍA SER LO CORRECTO: NO LIKES INFINITOS >:(
-    // if (!$(this).hasClass('boardTuits__heart--liked')) {
-    //   newCounter = parseInt(counter.text()) + 1;
-    //
-    //   $(this).addClass('boardTuits__heart--liked');
-    // } else {
-    //   newCounter = parseInt(counter.text()) - 1;
-    //
-    //   $(this).removeClass('boardTuits__heart--liked');
-    // }
-    // counter.text(newCounter);
   });
 
   // 03: Eliminar el div .twiteos__twit al hacer click sobre .twiteos__trash
@@ -43,13 +32,7 @@ $(function() {
     }, 500);
   });
 
-  // 04: Obtener imagen del input y cambiarla en img
-  $("[name='file']").change(function(event) {
-    var value = $(event.target).val(),  // obtener valor
-        source = `images/${value}`;
-
-    $(this).siblings('img').attr('src', source);  // reemplazarlo en la ruta de la imagen
-  });
+  
   
   // 05: Obtener data del form y crear tuit
   $('form').submit(function(event) {
@@ -66,7 +49,7 @@ $(function() {
     
 
     var twit = `<article class="tuit">\
-        <img class="twit__image" src="images/${image}" alt="author" />\
+        <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />\
 
         <div class="twit__border">\
           <div class="twit__quote">\
