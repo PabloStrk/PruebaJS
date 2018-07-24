@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);:root {
-  font: 18px /1.5 'Nunito', 'sans-serif';
+@import url(https://fonts.googleapis.com/css?family=Cabin);:root {
+  font: 18px /1.5 'Cabin', 'sans-serif';
 }
 
 
@@ -23,6 +23,13 @@ a {
   color: inherit;
 }
 
+body{
+
+    
+}
+
+}
+
 .clear {
   clear: both;
 }
@@ -37,10 +44,19 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 15px;
-  padding: 8px 40px;
+  padding: 8px 20px;
   background-color: #6845d0;
 
+
   }
+
+.navbar .logo .navbar-brand {
+
+    float: left;
+    height: 30px;
+    line-height: 20px;
+   
+}
 
 
 
@@ -60,38 +76,39 @@ columna1 navbar {
   background-color: #6845d0;
 }
 
-.columna1 .navbar__item {
+.navbar .navbar__item {
   font-size: 1.3rem;
   color: #EBE8EA;
   padding: 0 10px;
 }
 
-.columna1 .search__box {
+.navbar .search__box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1rem;
   color: #0A78C2;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   border: none;
-  border-radius: 25px;
-  padding: 5px 15px;
   border: 1px solid #6845d0;
+  border-radius: 10px;
+  padding: 5px 5px;
+  
 }
 
-.columna1 .search__box::-webkit-input-placeholder {
+.navbar .search__box::-webkit-input-placeholder {
   color: #f2d01d;
 }
 
-.columna1 .search__box:-ms-input-placeholder {
+.navbar .search__box:-ms-input-placeholder {
   color: ##f2d01d;
 }
 
-.columna1 .search__box::-ms-input-placeholder {
+.navbar .search__box::-ms-input-placeholder {
   color: ##f2d01d;
 }
 
-.columna1 .search__box::placeholder {
+.navbar .search__box::placeholder {
   color: ##f2d01d;
 }
 
@@ -106,13 +123,14 @@ columna1 navbar {
   border: 1px solid #6845d0;
 }
 
+
 .columna1 .createTwit__image {
   -o-object-fit: cover;
      object-fit: cover;
   width: 150px;
   height: 150px;
   margin-bottom: 15px;
-  border-radius: 3px;
+  border-radius: 51%;
 }
 
 .columna1 .createTwit__file {
@@ -178,7 +196,7 @@ columna1 navbar {
 }
 
 .twit {
-  height: 270px;
+  height: 230px;
 }
 
 .twit__image {
@@ -199,11 +217,12 @@ columna1 navbar {
 }
 
 .twit__quote {
+  color: white;
   margin: 0 10px;
   border-bottom: 1px solid grey;
   padding: 15px;
   border-radius: 15px;
-  background-color: #EBE8EA;
+  background-color: #6845d0;
   -webkit-box-shadow: 2px 2px 5px #BAB8BA;
           box-shadow: 2px 2px 5px #BAB8BA;
 }

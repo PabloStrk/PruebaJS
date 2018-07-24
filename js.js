@@ -84,11 +84,11 @@ $(function () {
     };
   });
 
-  // 02: Añadir/eliminar la clase .boardTuits__heart--liked al hacer click sobre .boardTuits__heart
-  $(".boardTuits").on('click', '.tuit__heart', function (event) {
+  // 02: Añadir/eliminar la clase .boardTwits__heart--liked al hacer click sobre .boardTwits__heart
+  $(".twiteos").on('click', '.twit__heart', function (event) {
     event.preventDefault(); // prevenir evento
 
-    $(this).addClass('tuit__heart--liked');
+    $(this).addClass('twit__heart--liked');
 
     var counter = $(this).next(),
         // obtengo el elemento con el número de likes
@@ -110,25 +110,18 @@ $(function () {
   });
 
   // 03: Eliminar el div .boardTuits__tuit al hacer click sobre .boardTuits__trash
-  $(".boardTuits").on('click', '.tuit__trash', function (event) {
+  $(".twiteos").on('click', '.twit__trash', function (event) {
     event.preventDefault();
 
-    var tuit = $(this).parents('.tuit');
+    var twit = $(this).parents('.twit');
 
-    tuit.fadeOut(500); // linda desaparición
+    twit.fadeOut(500); // linda desaparición
     setTimeout(function () {
       tuit.remove(); // remover el elemento del DOM luego de 0.5 seg
     }, 500);
   });
 
-  // 04: Obtener imagen del input y cambiarla en img
-  $("[name='file']").change(function (event) {
-    var value = $(event.target).val(),
-        // obtener valor
-    source = 'images/' + value;
-
-    $(this).siblings('img').attr('src', source); // reemplazarlo en la ruta de la imagen
-  });
+  
 
   // 05: Obtener data del form y crear tuit
   $('form').submit(function (event) {
@@ -139,18 +132,15 @@ $(function () {
     image = data[0].value,
         quote = data[1].value;
 
-    if (image == 'uk.png') {
-      // si no ha puesto foto, no agregar tuit
-      return;
-    }
+    
 
-    var tuit = '<article class="tuit">        <img class="tuit__image" src="images/' + image + '" alt="author" />\n        <div class="tuit__border">          <div class="tuit__quote">            ' + quote + '          </div>\n          <div class="tuit__features">            <div class="tuit__item tuit__heart"><a href=\'#\'><i class="fas fa-heart"></i></a></div>            <div class="tuit__item">0</div>            <div class="tuit__item tuit__trash"><a href=\'#\'><i class="far fa-trash-alt"></i></a></div>          </div>\n        </div>      </article>';
+    var twit = '<article class="twit">        <img class="twit__image" src="images/' + image + '" alt="author" />\n        <div class="tuit__border">          <div class="tuit__quote">            ' + quote + '          </div>\n          <div class="tuit__features">            <div class="tuit__item tuit__heart"><a href=\'#\'><i class="fas fa-heart"></i></a></div>            <div class="tuit__item">0</div>            <div class="tuit__item tuit__trash"><a href=\'#\'><i class="far fa-trash-alt"></i></a></div>          </div>\n        </div>      </article>';
 
-    $(tuit).prependTo('.boardTuits').hide().fadeIn(500); // agregar tuit
+    $(twit).prependTo('.twiteos').hide().fadeIn(500); // agregar twit
 
     $(this)[0].reset(); // limpiar form
 
-    $(this).children(":first-child").attr('src', 'images/uk.png');
+    $(this).children(":first-child").attr('src', 'images/vader_profile.jpeg');
   });
 });
 

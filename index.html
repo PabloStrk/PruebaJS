@@ -6,7 +6,7 @@
 
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tuitors</title>
+  <title>Tuitors Imperial</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css"/>
@@ -24,25 +24,38 @@
 
 <body>
 
+
+
   <!-- Navbar -->
       <nav class="navbar">
-        
-          <div class="navbar__item"><a href="#"><i class="fas fa-bars"></i></a>
-          </div>
 
-        <div class="navbar__item"><a href="#"><i class="fas fa-home"></i></a>
-        </div>
+                <!--
+                    <div class="logo">
+                            <a class="navbar-brand" href="#">
+                                <img alt="" src="images/logoempire.png">
+                            </a>
+                        
+                    </div>
 
-        <div class="navbar__item"><a href="#"><i class="fas fa-cog"></i></a>
-        </div>
+                  -->
 
-        <div class="navbar__item"><a href="#"><i class="fas fa-sign-out-alt"></i></a>
-        </div>
+                    
+                    <div class="navbar__item"><a href="#"><i class="fas fa-bars"></i></a>
+                    </div>
 
-        <form>
-              <input class="search__box" type="search" name="search" value="" placeholder="Buscar"/>
-        </form>
+                    <div class="navbar__item"><a href="#"><i class="fas fa-home"></i></a>
+                    </div>
 
+                    <div class="navbar__item"><a href="#"><i class="fas fa-cog"></i></a>
+                    </div>
+
+                    <div class="navbar__item"><a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                    </div>
+
+                    <form>
+                          <input class="search__box" type="search" name="search" value="" placeholder="Buscar"/>
+                    </form>
+          
       </nav>
 
   <div class="grid">
@@ -66,9 +79,9 @@
       
       <form class="createTwit" action="index.html" method="post">
         <!-- Imagen del perfil -->
-        <img class="createTwit__image" src="images/uk.png" alt="profile"/>
+        <img class="createTwit__image" src="images/vader_profile.jpeg" alt="profile"/>
 
-        <!-- Seleccionar imagen de perfil -->
+        <!-- Seleccionar imagen de perfil 
         <select class="createTwit__file" name="file" id="file">
           <option value="uk.png">Elige una imagen...</option>
           <option value="01.jpg">imagen 01</option>
@@ -83,12 +96,19 @@
           <option value="10.jpg">imagen 10</option>
         </select>
 
+        -->
+
         <!-- Texto del twit -->
-        <textarea class="createTwit__quote" name="tuitQuote" rows="6" placeholder="¿Qué sucede?" required></textarea>
+        <textarea class="createTwit__quote" name="twitQuote" rows="6" placeholder="¿Qué sucede en el Imperio Galáctico?" required></textarea>
 
         <!-- Botón Enviar -->
-        <input class="createTwit__button" type="submit" name="submit" value="SEND!"/>
+        <input class="createTwit__button" type="submit" name="submit" value= Send!>
+
+      
+
       </form>
+
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 
     </aside>
 
@@ -100,14 +120,14 @@
 
       <article class="twit">
 
-        <img class="twit__image" src="images/00.jpg" alt="author" />
+        <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
 
         <div class="twit__border">
           <div class="twit__quote">
-            Hello world!
+            ¡Buenos días queridos soldados imperiales!
           </div>
 
-          <div class="tuit__features">
+          <div class="twit__features">
             <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
             <div class="twit__item">1234</div>
             <div class="twit__item twit__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
@@ -118,16 +138,34 @@
 
       <article class="twit">
 
-        <img class="twit__image" src="images/00.jpg" alt="author" />
+        <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
 
         <div class="twit__border">
           <div class="twit__quote">
-            Dead.
+            Reconstruyendo la Estrella de la Muerte.
           </div>
 
           <div class="twit__features">
             <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
             <div class="twit__item">4321</div>
+            <div class="twit__item twit__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="twit">
+
+        <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
+
+        <div class="twit__border">
+          <div class="twit__quote">
+            BUM! a la Estrella de la Muerte :C
+          </div>
+
+          <div class="twit__features">
+            <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
+            <div class="twit__item">1</div>
             <div class="twit__item twit__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
           </div>
         </div>
