@@ -25,6 +25,8 @@ a {
 
 body{
 
+  background-color: #58005826;
+
     
 }
 
@@ -60,23 +62,6 @@ body{
 
 
 
-
-columna1 navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  padding: 8px 40px;
-  border-radius: 25px;
-  background-color: #6845d0;
-}
-
 .navbar .navbar__item {
   font-size: 1.3rem;
   color: #EBE8EA;
@@ -86,7 +71,7 @@ columna1 navbar {
 .navbar .search__box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1rem;
+  font-size: 1em;
   color: #0A78C2;
   width: 100%;
   margin-bottom: 5px;
@@ -119,7 +104,7 @@ columna1 navbar {
   width: 100%;
   border-radius: 25px;
   padding: 15px 0;
-  background-color: #f2da1d;
+  background-color: #f2d01d;
   text-align: center;
   border: 1px solid #6845d0;
 }
@@ -159,14 +144,12 @@ columna1 navbar {
   border: none;
   text-align: center;
   padding-top: 20px;
-  border-left: 0.5px solid #6845d0;
-  border-right: 0.5px solid #6845d0;
   font-size: 1rem;
   color: grey;
 }
 
 .columna1 .createTwit__quote::-webkit-input-placeholder {
-  color: #BAB8BA;
+  color: #f2d01d;
 }
 
 .columna1 .createTwit__quote:-ms-input-placeholder {
@@ -215,6 +198,7 @@ columna1 navbar {
   padding-top: 60px;
   border-radius: 25px;
   border: 1px solid #6845d0;
+  background-color: #cba4da;
 }
 
 .twit__quote {
@@ -222,10 +206,9 @@ columna1 navbar {
   margin: 0 10px;
   border-bottom: 1px solid grey;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   background-color: #6845d0;
-  -webkit-box-shadow: 2px 2px 5px #BAB8BA;
-          box-shadow: 2px 2px 5px #BAB8BA;
+  
 }
 
 .twit__features {
@@ -234,10 +217,9 @@ columna1 navbar {
   display: flex;
   margin: 0 10px 20px 10px;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px;
   background-color: #EBE8EA;
-  -webkit-box-shadow: 2px 2px 5px #BAB8BA;
-          box-shadow: 2px 2px 5px #BAB8BA;
+ 
 }
 
 .twit__item {
