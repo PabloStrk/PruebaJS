@@ -19,21 +19,8 @@ $(function() {
     counter.text(newCounter);  // se actualiza el string
 
   });
-
-  // 03: Eliminar el div .twiteos__twit al hacer click sobre .twiteos__trash
-  $(".twiteos").on('click', '.twit__trash', function(event) {
-    event.preventDefault();
-
-    var twit = $(this).parents('.twit');
-
-    twit.fadeOut(500);  // linda desaparición
-    setTimeout(function() {
-      twit.remove();  // remover el elemento del DOM luego de 0.5 seg
-    }, 500);
-  });
-
   
-  
+
   // 05: Obtener data del form y crear tuit
   $('form').submit(function(event) {
     event.preventDefault();  // prevenir evento
@@ -42,14 +29,12 @@ $(function() {
         image = data[0].value,
         quote = data[1].value;
 
-    if (image == 'vader_profile.jpeg') { // si no ha puesto foto, no agregar tuit
-      return;
-    }
-
     
 
-    var twit = `<article class="tuit">\
-        <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />\
+ var ramdon = Math.floor((Math.random() * 100) + 1);
+
+    var twit = `<article class="twit eliminar`+ramdon+`">\
+        <img class="twit__image" src="images/`+image+`" alt="author" />\
 
         <div class="twit__border">\
           <div class="twit__quote">\
@@ -59,16 +44,24 @@ $(function() {
           <div class="twit__features">\
             <div class="twit__item twit__heart"><a href='#'><i class="fas fa-heart"></i></a></div>\
             <div class="twit__item">0</div>\
-            <div class="twit__item twit__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>\
+            <div class="twit__item twit__trash"><a href='#' onclick="eliminar(`+ramdon+`);"><i class="far fa-trash-alt"></i></a></div>\
           </div>\
 
         </div>\
       </article>`
 
-    $(twit).prependTo('.twiteos').hide().fadeIn(500); // agregar tuit
+    $(twit).prependTo('.twiteos').hide().fadeIn(500); // agregar twit
 
     $(this)[0].reset();  // limpiar form
 
     $(this).children(":first-child").attr('src', 'images/vader_profile.jpeg');
   });
 });
+function eliminar(id){
+    $('.eliminar'+id).fadeOut(500); 
+    setTimeout(function() {
+      $('.eliminar'+id).remove(); 
+    }, 500);
+  }
+
+ 
