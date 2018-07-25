@@ -1,3 +1,3 @@
 # Prueba2: JS
 
-### El link de la web es: https://pablostrk.github.io/PruebaJS/
+### El link del repo es: https://pablostrk.github.io/PruebaJS/
