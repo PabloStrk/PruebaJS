@@ -76,7 +76,7 @@ body{
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1em;
-  color: #0A78C2;
+  color: #651df27d;
   width: 100%;
   margin-bottom: 5px;
   border: none;
@@ -108,7 +108,7 @@ body{
   width: 100%;
   border-radius: 25px;
   padding: 15px 0;
-  background-color: #f2d01d;
+  background-color: #651df27d;
   text-align: center;
   border: 1px solid #6845d0;
 }
