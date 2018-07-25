@@ -50,7 +50,7 @@
                     <div class="navbar__item"><a href="#"> <i class="fas fa-bars"></i> </a>
                     </div>
 
-                    <div class="navbar__item"><a href="#"> <i class="fas fa-cog"></i> </a>
+                    <div class="navbar__item"><a href="#"> <i class="fab fa-galactic-senate"></i> </a>
                     </div>
 
                     <div class="navbar__item"><a href="#"> <i class="fas fa-american-sign-language-interpreting"></i> </a>
@@ -67,7 +67,9 @@
 
   <div class="grid">
 
- <!-- Perfil y zona de escritura -->
+    <!-- Foto de perfil y cuadro de texto-->
+
+
     <aside class="columna1">
 
     
@@ -88,11 +90,21 @@
 
     
         <!-- Texto del twit -->
+
         <textarea class="createTwit__quote" name="twitQuote" rows="6" placeholder="¿Qué sucede en el Imperio Galáctico?" required></textarea>
 
+
+
         <!-- Botón Enviar -->
-        <input class="createTwit__button" type="submit" name="submit" value= Enviar!>
-      
+
+        <input class="createTwit__button" type="submit" name="submit" value="Enviar!">
+        
+        
+
+      <!--
+        <button type="submit" class="bcreateTwit__button"><i class="fas fa-crow"></i></button>
+      -->  
+    
       <!--
        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       -->
@@ -103,86 +115,86 @@
     </aside>
 
 
-    <!-- Twits -->
+    <!-- TWITS -->
+
+          <div class="twiteos" id="twiteos">
+
+                  <article class="twit eliminar101">
+
+                    <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
+
+                    <div class="twit__border">
+                      <div class="twit__quote">
+                        ¡Buenos días queridos soldaditos imperiales!
+                      </div>
+
+                      <div class="twit__features">
+                        <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
+                        <div class="twit__item">1234</div>
+                        <div class="twit__item twit__trash"><a href='#' onclick="eliminar('101');"><i class="far fa-trash-alt"></i></a></div>
+                      </div>
+                    </div>
+
+                  </article>
+
+                  <article class="twit eliminar102">
+
+                    <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
+
+                    <div class="twit__border">
+                      <div class="twit__quote">
+                        Reconstruyendo la Estrella de la Muerte.
+                      </div>
+
+                      <div class="twit__features">
+                        <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
+                        <div class="twit__item">4321</div>
+                        <div class="twit__item twit__trash"><a href='#' onclick="eliminar('102');"><i class="far fa-trash-alt"></i></a></div>
+                      </div>
+                    </div>
+
+                  </article>
+
+                  <article class="twit eliminar103">
+
+                    <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
+
+                    <div class="twit__border">
+                      <div class="twit__quote">
+                        Bueno, les informo que nos destruyeron la Estrella de la Muerte y yo justo andaba afuera, así que estoy bien :)
+                      </div>
+
+                      <div class="twit__features">
+                        <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
+                        <div class="twit__item">1</div>
+                        <div class="twit__item twit__trash"><a href='#' onclick="eliminar('103');"><i class="far fa-trash-alt"></i></a></div>
+                      </div>
+                    </div>
+
+                  </article>
 
 
-    <section class="twiteos" id="twiteos">
 
-      <article class="twit eliminar101">
+                  <article class="twit eliminar101">
 
-        <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
+                    <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
 
-        <div class="twit__border">
-          <div class="twit__quote">
-            ¡Buenos días queridos soldaditos imperiales!
+                    <div class="twit__border">
+                      <div class="twit__quote">
+                        Tengo un mal presentimiento...
+                      </div>
+
+                      <div class="twit__features">
+                        <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
+                        <div class="twit__item">352</div>
+                        <div class="twit__item twit__trash"><a href='#' onclick="eliminar('101');"><i class="far fa-trash-alt"></i></a></div>
+                      </div>
+                    </div>
+
+                  </article>
+
           </div>
-
-          <div class="twit__features">
-            <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
-            <div class="twit__item">1234</div>
-            <div class="twit__item twit__trash"><a href='#' onclick="eliminar('101');"><i class="far fa-trash-alt"></i></a></div>
-          </div>
-        </div>
-
-      </article>
-
-      <article class="twit eliminar102">
-
-        <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
-
-        <div class="twit__border">
-          <div class="twit__quote">
-            Reconstruyendo la Estrella de la Muerte.
-          </div>
-
-          <div class="twit__features">
-            <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
-            <div class="twit__item">4321</div>
-            <div class="twit__item twit__trash"><a href='#' onclick="eliminar('102');"><i class="far fa-trash-alt"></i></a></div>
-          </div>
-        </div>
-
-      </article>
-
-      <article class="twit eliminar103">
-
-        <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
-
-        <div class="twit__border">
-          <div class="twit__quote">
-            Bueno, les informo que nos destruyeron la Estrella de la Muerte y yo justo andaba afuera, así que estoy bien :)
-          </div>
-
-          <div class="twit__features">
-            <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
-            <div class="twit__item">1</div>
-            <div class="twit__item twit__trash"><a href='#' onclick="eliminar('103');"><i class="far fa-trash-alt"></i></a></div>
-          </div>
-        </div>
-
-      </article>
-
-
-
-      <article class="twit eliminar101">
-
-        <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
-
-        <div class="twit__border">
-          <div class="twit__quote">
-            Tengo un mal presentimiento...
-          </div>
-
-          <div class="twit__features">
-            <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
-            <div class="twit__item">352</div>
-            <div class="twit__item twit__trash"><a href='#' onclick="eliminar('101');"><i class="far fa-trash-alt"></i></a></div>
-          </div>
-        </div>
-
-      </article>
-
-    </section>
+        
 
   </div>
 

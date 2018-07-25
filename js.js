@@ -7,9 +7,9 @@ $(function() {
     };
   });
 
-  // 02: Añadir/eliminar la clase .boardTuits__heart--liked al hacer click sobre .boardTuits__heart
+  // 02
   $(".twiteos").on('click', '.twit__heart', function(event) {
-    event.preventDefault();  // prevenir evento
+    event.preventDefault();  // Previene evento
 
     $(this).addClass('twit__heart--liked');
 
@@ -31,9 +31,9 @@ $(function() {
 
     
 
- var ramdon = Math.floor((Math.random() * 100) + 1);
+ var random = Math.floor((Math.random() * 100) + 1);
 
-    var twit = `<article class="twit eliminar`+ramdon+`">\
+    var twit = `<article class="twit eliminar`+random+`">\
         <img class="twit__image" src="images/`+image+`" alt="author" />\
 
         <div class="twit__border">\
@@ -44,7 +44,7 @@ $(function() {
           <div class="twit__features">\
             <div class="twit__item twit__heart"><a href='#'><i class="fas fa-heart"></i></a></div>\
             <div class="twit__item">0</div>\
-            <div class="twit__item twit__trash"><a href='#' onclick="eliminar(`+ramdon+`);"><i class="far fa-trash-alt"></i></a></div>\
+            <div class="twit__item twit__trash"><a href='#' onclick="eliminar(`+random+`);"><i class="far fa-trash-alt"></i></a></div>\
           </div>\
 
         </div>\
