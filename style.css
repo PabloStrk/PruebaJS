@@ -3,11 +3,6 @@
 }
 
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .grid {
   display: grid;
   grid-auto-columns: 1fr;
@@ -15,9 +10,6 @@
   margin: 20px 15px;
 }
 
-ul {
-  list-style: none;
-}
 
 a {
   color: inherit;
@@ -25,9 +17,7 @@ a {
 
 body{
 
-  background-color: #58005826;
-
-    
+  background-color: #58005826; 
 }
 
 }
@@ -41,10 +31,10 @@ body{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-bottom: 15px;
   padding: 8px 20px;
   background-color: #6845d0;
@@ -53,6 +43,7 @@ body{
   width: 100%;
   top: 0;
   z-index: 3;
+
 
   }
 
@@ -73,8 +64,7 @@ body{
 }
 
 .navbar .search__box {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+
   font-size: 1em;
   color: #651df27d;
   width: 100%;
@@ -102,9 +92,8 @@ body{
   color: ##f2d01d;
 }
 
-.columna1 .createTwit {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.columna1 .crearTwit {
+
   width: 100%;
   border-radius: 25px;
   padding: 15px 0;
@@ -114,7 +103,7 @@ body{
 }
 
 
-.columna1 .createTwit__image {
+.columna1 .crearTwit__image {
   -o-object-fit: cover;
      object-fit: cover;
   width: 150px;
@@ -123,7 +112,7 @@ body{
   border-radius: 51%;
 }
 
-.columna1 .createTwit__file {
+.columna1 .crearTwit__file {
   display: block;
   width: 100%;
   border: none;
@@ -133,12 +122,12 @@ body{
   cursor: pointer;
 }
 
-.columna1 .createTwit__file option {
+.columna1 .crearTwit__file option {
   background-color: #6845d0;
   color: white;
 }
 
-.columna1 .createTwit__quote {
+.columna1 .crearTwit__texto {
   resize: vertical;
   width: 100%;
   min-height: 50px;
@@ -152,23 +141,23 @@ body{
   color: grey;
 }
 
-.columna1 .createTwit__quote::-webkit-input-placeholder {
+.columna1 .crearTwit__texto::-webkit-input-placeholder {
   color: #f2d01d;
 }
 
-.columna1 .createTwit__quote:-ms-input-placeholder {
+.columna1 .crearTwit__texto:-ms-input-placeholder {
   color: #BAB8BA;
 }
 
-.columna1 .createTwit__quote::-ms-input-placeholder {
+.columna1 .crearTwit__texto::-ms-input-placeholder {
   color: #BAB8BA;
 }
 
-.columna1 .createTwit__quote::placeholder {
+.columna1 .crearTwit__texto::placeholder {
   color: #BAB8BA;
 }
 
-.columna1 .createTwit__button {
+.columna1 .crearTwit__boton {
   width: 150px;
   margin-top: 10px;
   border: 2px solid white;
@@ -179,7 +168,7 @@ body{
   font-size: 1rem;
 }
 
-.columna1 .createTwit__button:hover {
+.columna1 .crearTwit__boton:hover {
   border-color: white;
   background-color: #2e1382;
 }
@@ -207,7 +196,7 @@ body{
   background-color: #cba4da;
 }
 
-.twit__quote {
+.twit__contenido {
   color: white;
   margin: 0 10px;
   border-bottom: 1px solid grey;
@@ -217,7 +206,7 @@ body{
   
 }
 
-.twit__features {
+.twit__detalles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,12 +217,12 @@ body{
  
 }
 
-.twit__item {
+.twit__count {
   color: grey;
   padding-right: 5px;
 }
 
-.twit__trash {
+.twit__eliminar {
   margin-left: auto;
   margin-right: 10px;
   color: #e2bee4;
@@ -243,7 +232,7 @@ body{
   text-shadow: 0 0 5px #AD0600;
 }
 
-.twit__heart--liked {
+.twit__fav {
   color: #AD0600;
 }
 
@@ -261,7 +250,6 @@ body{
   font-size: 0.5rem;
 
 }
-
 
 .btn{
   width: 150px;

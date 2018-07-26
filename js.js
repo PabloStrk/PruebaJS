@@ -1,31 +1,34 @@
-// 01: inicializar con evento ready
+
+
+//Iniciar
+
 $(function() {
 
   $('a').click(function(event) {
     if ($(this).attr('href') == '#') {
-      event.preventDefault();  // prevenir evento de los logos vacíos
+      event.preventDefault();  //
     };
   });
 
-  // 02
+
   $(".twiteos").on('click', '.twit__heart', function(event) {
     event.preventDefault();  // Previene evento
 
-    $(this).addClass('twit__heart--liked');
+    $(this).addClass('twit__fav');
 
-    var counter = $(this).next(),  // obtengo el elemento con el número de likes
-        newCounter = parseInt(counter.text()) + 1;  // obtengo el string, se convierte a number y se suma 1
+    var counter = $(this).next(),
+        newCounter = parseInt(counter.text()) + 1;
 
-    counter.text(newCounter);  // se actualiza el string
+    counter.text(newCounter);
 
   });
   
 
-  // 05: Obtener data del form y crear tuit
+  // Se obtienen los datos
   $('form').submit(function(event) {
-    event.preventDefault();  // prevenir evento
+    event.preventDefault(); 
 
-    var data = $(this).serializeArray(),  // obtener data
+    var data = $(this).serializeArray(),
         image = data[0].value,
         quote = data[1].value;
 
@@ -37,22 +40,23 @@ $(function() {
         <img class="twit__image" src="images/`+image+`" alt="author" />\
 
         <div class="twit__border">\
-          <div class="twit__quote">\
+          <div class="twit__contenido">\
             ${quote}\
           </div>\
 
-          <div class="twit__features">\
-            <div class="twit__item twit__heart"><a href='#'><i class="fas fa-heart"></i></a></div>\
-            <div class="twit__item">0</div>\
-            <div class="twit__item twit__trash"><a href='#' onclick="eliminar(`+random+`);"><i class="far fa-trash-alt"></i></a></div>\
+          <div class="twit__detalles">\
+            <div class="twit__count twit__heart"><a href='#'><i class="fas fa-heart"></i></a></div>\
+            <div class="twit__count">0</div>\
+            <div class="twit__count twit__eliminar"><a href='#' onclick="eliminar(`+random+`);"><i class="far fa-trash-alt"></i></a></div>\
           </div>\
 
         </div>\
       </article>`
 
-    $(twit).prependTo('.twiteos').hide().fadeIn(500); // agregar twit
+    // Para agregar otro twit
+    $(twit).prependTo('.twiteos').hide().fadeIn(500);
 
-    $(this)[0].reset();  // limpiar form
+    $(this)[0].reset();
 
     $(this).children(":first-child").attr('src', 'images/vader_profile.jpeg');
   });

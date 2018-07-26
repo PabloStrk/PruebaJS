@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
 
 
 <head>
@@ -18,11 +18,11 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  
   <!-- Mi CSS -->
   <link rel="stylesheet" href="style.css"/>
 
   
-
   <!-- Fuentes -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
 
@@ -30,57 +30,57 @@
 </head>
 
 
+
+
 <body>
 
 
 
   <!-- Navbar -->
-      <nav class="navbar">
+  <nav class="navbar">
 
 
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                          <a class="navbar-brand" href="#">
-                            <img class="logoimperial" alt="" src="images/logoempire.png">
-                          </a>
-                        </div>
-                      </div>
-                                    
-                    
-                    <div class="navbar__item"><a href="#"> <i class="fas fa-bars"></i> </a>
-                    </div>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                    <img class="logoimperial" alt="" src="images/logoempire.png">
+                  </a>
+                </div>
+              </div>
+                            
+            
+            <div class="navbar__item"><a href="#"> <i class="fas fa-envelope"></i></i> </a>
+            </div>
 
-                    <div class="navbar__item"><a href="#"> <i class="fab fa-galactic-senate"></i> </a>
-                    </div>
+            <div class="navbar__item"><a href="#"> <i class="fab fa-galactic-senate"></i> </a>
+            </div>
 
-                    <div class="navbar__item"><a href="#"> <i class="fas fa-american-sign-language-interpreting"></i> </a>
-                    </div>
+            <div class="navbar__item"><a href="#"> <i class="fas fa-american-sign-language-interpreting"></i> </a>
+            </div>
 
-                    <form>
-                          <input class="search__box" type="search" name="search" value="" placeholder="Buscar..."/>
-                    </form>
+            <form>
+                  <input class="search__box" type="search" name="search" value="" placeholder="Buscar..."/>
+            </form>
 
-                    <div class="navbar__item"><a href="#"><i class="fas fa-sign-out-alt"></i></a>
-                    </div>
+            <div class="navbar__item"><a href="#"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
           
-      </nav>
+  </nav>
 
   <div class="grid">
 
-    <!-- Foto de perfil y cuadro de texto-->
 
-
-    <aside class="columna1">
+    <section class="columna1">
 
     
-      <!-- Crear twit-->
+      <!-- Creación de twit-->
 
       
-      <form class="createTwit" action="index.html" method="post">
-        <!-- Imagen del perfil -->
-        <img class="createTwit__image" src="images/vader_profile.jpeg" alt="profile"/>
+      <form class="crearTwit" action="index.html" method="post">
 
-        <select class="createTwit__file" name="file" id="file">
+        <img class="crearTwit__image" src="images/vader_profile.jpeg" alt="profile"/>
+
+        <select class="crearTwit__file" name="file" id="file">
           <option value="vader_profile.jpeg">Lord Vader</option>
           <option value="logoempire.png">Anónimo</option>
           <option value="leia.jpg">Senadora Leia</option>
@@ -91,28 +91,23 @@
     
         <!-- Texto del twit -->
 
-        <textarea class="createTwit__quote" name="twitQuote" rows="6" placeholder="¿Qué sucede en el Imperio Galáctico?" required></textarea>
+        <textarea class="crearTwit__texto" name="textoTwit" rows="6" placeholder="¿Qué sucede en el Imperio Galáctico?" required></textarea>
 
 
-
-        <!-- Botón Enviar -->
-
-        <input class="createTwit__button" type="submit" name="submit" value="Enviar!">
+        <input class="crearTwit__boton" type="submit" name="submit" value="Enviar!">
         
         
 
-      <!--
-        <button type="submit" class="bcreateTwit__button"><i class="fas fa-crow"></i></button>
-      -->  
-    
-      <!--
-       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-      -->
+            <!-- no resultaron estos botones :(
+              <button type="submit" class="bcreateTwit__button"><i class="fas fa-crow"></i></button>
+           
+             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            -->
 
       </form>
 
     
-    </aside>
+    </section>
 
 
     <!-- TWITS -->
@@ -124,14 +119,14 @@
                     <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
 
                     <div class="twit__border">
-                      <div class="twit__quote">
+                      <div class="twit__contenido">
                         ¡Buenos días queridos soldaditos imperiales!
                       </div>
 
-                      <div class="twit__features">
-                        <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
-                        <div class="twit__item">1234</div>
-                        <div class="twit__item twit__trash"><a href='#' onclick="eliminar('101');"><i class="far fa-trash-alt"></i></a></div>
+                      <div class="twit__detalles">
+                        <div class="twit__count twit__heart twit__fav"><a href='#'><i class="fas fa-heart"></i></a></div>
+                        <div class="twit__count">1234</div>
+                        <div class="twit__count twit__eliminar"><a href='#' onclick="eliminar('101');"><i class="far fa-trash-alt"></i></a></div>
                       </div>
                     </div>
 
@@ -142,15 +137,17 @@
                     <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
 
                     <div class="twit__border">
-                      <div class="twit__quote">
+                      
+                      <div class="twit__contenido">
                         Reconstruyendo la Estrella de la Muerte.
                       </div>
 
-                      <div class="twit__features">
-                        <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
-                        <div class="twit__item">4321</div>
-                        <div class="twit__item twit__trash"><a href='#' onclick="eliminar('102');"><i class="far fa-trash-alt"></i></a></div>
+                      <div class="twit__detalles">
+                        <div class="twit__count twit__heart twit__fav"><a href='#'><i class="fas fa-heart"></i></a></div>
+                        <div class="twit__count">4321</div>
+                        <div class="twit__count twit__eliminar"><a href='#' onclick="eliminar('102');"><i class="far fa-trash-alt"></i></a></div>
                       </div>
+
                     </div>
 
                   </article>
@@ -160,15 +157,37 @@
                     <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
 
                     <div class="twit__border">
-                      <div class="twit__quote">
+
+                      <div class="twit__contenido">
                         Les informo que nos destruyeron la Estrella de la Muerte, estoy bien :)
                       </div>
 
-                      <div class="twit__features">
-                        <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
-                        <div class="twit__item">1</div>
-                        <div class="twit__item twit__trash"><a href='#' onclick="eliminar('103');"><i class="far fa-trash-alt"></i></a></div>
+                      <div class="twit__detalles">
+                        <div class="twit__count twit__heart twit__fav"><a href='#'><i class="fas fa-heart"></i></a></div>
+                        <div class="twit__count">1</div>
+                        <div class="twit__count twit__eliminar"><a href='#' onclick="eliminar('103');"><i class="far fa-trash-alt"></i></a></div>
                       </div>
+
+                    </div>
+
+                  </article>
+
+                  <article class="twit eliminar103">
+
+                    <img class="twit__image" src="images/leia.jpg" alt="author" />
+
+                    <div class="twit__border">
+
+                      <div class="twit__contenido">
+                        Nos robamos los planos jiji
+                      </div>
+
+                      <div class="twit__detalles">
+                        <div class="twit__count twit__heart twit__fav"><a href='#'><i class="fas fa-heart"></i></a></div>
+                        <div class="twit__count">856438</div>
+                        <div class="twit__count twit__eliminar"><a href='#' onclick="eliminar('103');"><i class="far fa-trash-alt"></i></a></div>
+                      </div>
+
                     </div>
 
                   </article>
@@ -180,14 +199,14 @@
                     <img class="twit__image" src="images/vader_profile.jpeg" alt="author" />
 
                     <div class="twit__border">
-                      <div class="twit__quote">
+                      <div class="twit__contenido">
                         Tengo un mal presentimiento...
                       </div>
 
-                      <div class="twit__features">
-                        <div class="twit__item twit__heart twit__heart--liked"><a href='#'><i class="fas fa-heart"></i></a></div>
-                        <div class="twit__item">352</div>
-                        <div class="twit__item twit__trash"><a href='#' onclick="eliminar('101');"><i class="far fa-trash-alt"></i></a></div>
+                      <div class="twit__detalles">
+                        <div class="twit__count twit__heart twit__fav"><a href='#'><i class="fas fa-heart"></i></a></div>
+                        <div class="twit__count">352</div>
+                        <div class="twit__count twit__eliminar"><a href='#' onclick="eliminar('101');"><i class="far fa-trash-alt"></i></a></div>
                       </div>
                     </div>
 
@@ -205,7 +224,7 @@
        
       </div>
 
-      <div class="panel-footer">© Todos los derechos reservados, Imperio Galáctico SPA</div>
+      <div class="panel-footer"> © Todos los derechos reservados, Imperio Galáctico SPA</div>
   
 
 
