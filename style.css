@@ -2,6 +2,40 @@
   font: 18px /1.5 'Cabin', 'sans-serif';
 }
 
+@media (min-width: 576px) {
+  .grid {
+    grid-template-columns: 35vw auto;
+    grid-template-rows: 100%;
+    margin: 0 5vw;
+  }
+
+  .columna1 {
+    position: fixed;
+    top: 90px;
+    width: 35vw;
+  }
+
+  .twiteos {
+    grid-column-start: 2;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 350px auto;
+    margin: 0 10vw;
+  }
+
+  .columna1 {
+    max-width: 350px;
+  }
+
+  .twiteos {
+    max-width: 650px;
+  }
+}
+
 
 .grid {
   display: grid;
@@ -146,15 +180,15 @@ body{
 }
 
 .columna1 .crearTwit__texto:-ms-input-placeholder {
-  color: #BAB8BA;
+  color: black;
 }
 
 .columna1 .crearTwit__texto::-ms-input-placeholder {
-  color: #BAB8BA;
+  color: black;
 }
 
 .columna1 .crearTwit__texto::placeholder {
-  color: #BAB8BA;
+  color: grey;
 }
 
 .columna1 .crearTwit__boton {
@@ -261,37 +295,4 @@ body{
   color: white;
 }
 
-@media (min-width: 576px) {
-  .grid {
-    grid-template-columns: 35vw auto;
-    grid-template-rows: 100%;
-    margin: 0 5vw;
-  }
-
-  .columna1 {
-    position: fixed;
-    top: 90px;
-    width: 35vw;
-  }
-
-  .twiteos {
-    grid-column-start: 2;
-    margin-left: 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .grid {
-    grid-template-columns: 350px auto;
-    margin: 0 10vw;
-  }
-
-  .columna1 {
-    max-width: 350px;
-  }
-
-  .twiteos {
-    max-width: 650px;
-  }
-}
 
