@@ -1,0 +1,115 @@
+.grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 100%;
+  margin: 20px 15px;
+}
+
+
+a {
+  color: inherit;
+}
+
+body{
+
+  background-color: #58005826;
+  margin: 0;
+}
+
+
+.clear {
+  clear: both;
+}
+
+
+
+.columna1 .crearTwit {
+
+  width: 100%;
+  border-radius: 25px;
+  padding: 15px 0;
+  background-color: #651df2b0;
+  text-align: center;
+  border: 1px solid $primary-color;
+}
+
+
+.columna1 .crearTwit__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  border-radius: 51%;
+}
+
+.columna1 .crearTwit__file {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 3px 15px;
+  background-color: $primary-color;
+  color: white;
+  cursor: pointer;
+}
+
+.columna1 .crearTwit__file option {
+  background-color: $primary-color;
+  color: white;
+}
+
+.columna1 .crearTwit__texto {
+  resize: vertical;
+  width: 100%;
+  min-height: 50px;
+  max-height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1rem;
+  color: grey;
+}
+
+.columna1 .crearTwit__texto::-webkit-input-placeholder {
+  color: #f2d01d;
+}
+
+.columna1 .crearTwit__texto:-ms-input-placeholder {
+  color: black;
+}
+
+.columna1 .crearTwit__texto::-ms-input-placeholder {
+  color: black;
+}
+
+.columna1 .crearTwit__texto::placeholder {
+  color: grey;
+}
+
+.columna1 .crearTwit__boton {
+  width: 150px;
+  margin-top: 10px;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 10px 0;
+  background-color: $primary-color;
+  color: white;
+  font-size: 1rem;
+}
+
+.columna1 .crearTwit__boton:hover {
+  border-color: white;
+  background-color: #2e1382;
+}
+
+.btn{
+  width: 150px;
+  margin-top: 10px;
+  border: 1px;
+  border-radius: 25px;
+  padding: 10px 0;
+  background-color: $primary-color;
+  color: white;
+}

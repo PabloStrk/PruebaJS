@@ -2,4 +2,4 @@
 
 "La pascualina Imperial"
 
-### El link del repo es: https://pablostrk.github.io/PruebaJS/
+### El link de la pàgina es: https://pablostrk.github.io/PruebaJS/

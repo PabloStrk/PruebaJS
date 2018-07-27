@@ -1,0 +1,62 @@
+.twit {
+  
+}
+
+
+.twit__image {
+  position: relative; 
+  top: 64px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.twit__border {
+  padding-top: 60px;
+  border-radius: 25px;
+  border: 1px solid $primary-color;
+  background-color: #cba4da;
+}
+
+.twit__contenido {
+  color: white;
+  margin: 0 10px;
+  border-bottom: 1px solid grey;
+  padding: 15px;
+  border-radius: 15px 15px 0 0;
+  background-color: darken($primary-color, 20%);
+  
+}
+
+.twit__detalles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px 20px 10px;
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  background-color: #EBE8EA;
+ 
+}
+
+.twit__count {
+  color: grey;
+  padding-right: 5px;
+}
+
+.twit__eliminar {
+  margin-left: auto;
+  margin-right: 10px;
+  color: #e2bee4;
+}
+
+.twit__heart:hover {
+  text-shadow: 0 0 5px #AD0600;
+}
+
+.twit__fav {
+  color: #AD0600;
+}

@@ -1,0 +1,66 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 8px 20px;
+  background-color: #6845d0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+
+  .logoimperial {
+
+    height: 30px;
+    width: 30px;
+    padding-top: 3px; 
+     
+  }
+
+  .navbar__item {
+    font-size: 1.5rem;
+    color: white;
+    padding: 0 10px;
+  }
+
+  .search__box {
+
+    font-size: 1em;
+    color: #651df27d;
+    width: 100%;
+    margin-bottom: 5px;
+    border: none;
+    border: 1px solid #6845d0;
+    border-radius: 10px;
+    padding: 5px 5px;
+    
+  }
+
+  .search__box::-webkit-input-placeholder {
+    color: #f2d01d;
+  }
+
+  .search__box:-ms-input-placeholder {
+    color: #f2d01d;
+  }
+
+  .search__box::-ms-input-placeholder {
+    color: #f2d01d;
+  }
+
+  .search__box::placeholder {
+    color: #f2d01d;
+  }
+
+
+}
+
+
+
